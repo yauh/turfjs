@@ -4,7 +4,7 @@ Turf = {};
 
 Turf.hello =
   function () {
-    return "hello to you";
+    return "hello";
   };
 
 Turf.random = function (args) {
