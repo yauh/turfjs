@@ -1,3 +1,3 @@
 turf.linestring = function (coordinates, properties) {
-  return turfJs.linestring(coordinates, properties);
+  return turf.linestring(coordinates, properties);
 };

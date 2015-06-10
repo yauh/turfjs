@@ -1,3 +1,3 @@
 turf.aggregate = function (polygons, points, aggregations) {
-  return turfJs.aggregate(polygons, points, aggregations);
+  return turf.aggregate(polygons, points, aggregations);
 };

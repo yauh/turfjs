@@ -1,3 +1,3 @@
 turf.inside = function (point, polygon) {
-  return turfJs.inside(point, polygon);
+  return turf.inside(point, polygon);
 };

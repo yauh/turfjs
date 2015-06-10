@@ -1,3 +1,3 @@
 turf.bearing = function (start, end) {
-  return turfJs.bearing(start, end);
+  return turf.bearing(start, end);
 };

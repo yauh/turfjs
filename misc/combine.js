@@ -1,3 +1,3 @@
 turf.combine = function (fc) {
-  return turfJs.combine(fc);
+  return turf.combine(fc);
 };

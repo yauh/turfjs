@@ -1,3 +1,3 @@
 turf.bboxPolygon = function (bbox) {
-  return turfJs.bboxPolygon(bbox);
+  return turf.bboxPolygon(bbox);
 };

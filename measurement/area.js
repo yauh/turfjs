@@ -1,3 +1,3 @@
 turf.area = function (input) {
-  return turfJs.area(input);
+  return turf.area(input);
 };

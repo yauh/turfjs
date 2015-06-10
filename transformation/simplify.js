@@ -1,3 +1,3 @@
 turf.simplify = function (feature, tolerance, highQuality) {
-  return turfJs.simplify(feature, tolerance, highQuality);
+  return turf.simplify(feature, tolerance, highQuality);
 };

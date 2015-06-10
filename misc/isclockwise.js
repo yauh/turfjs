@@ -1,3 +1,3 @@
 turf.isClockwise = function (ring) {
-  return turfJs.isClockwise(ring);
+  return turf.isClockwise(ring);
 };

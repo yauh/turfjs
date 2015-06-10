@@ -1,6 +1,6 @@
 Package.describe({
   name: 'yauh:turfjs',
-  version: '1.0.0',
+  version: '1.0.1-beta1',
   // Brief, one-line summary of the package.
   summary: 'turf.js library for geospatial operations (analyze, aggregate, and transform GeoJSON data)',
   // URL to the Git repository containing the source code for this package.
@@ -16,78 +16,12 @@ Npm.depends({
 
 Package.onUse(function (api) {
   api.versionsFrom('1.0.4.1');
-  api.export(['turf', 'Turf']); // keep legacy support for Turf
   api.addFiles([
-      'turfjs.js',
-      'aggregation/aggregate.js',
-      'aggregation/average.js',
-      'aggregation/count.js',
-      'aggregation/deviation.js',
-      'aggregation/max.js',
-      'aggregation/median.js',
-      'aggregation/min.js',
-      'aggregation/sum.js',
-      'aggregation/variance.js',
-
-      'classification/jenks.js',
-      'classification/quantile.js',
-      'classification/reclass.js',
-
-      'data/filter.js',
-      'data/remove.js',
-      'data/sample.js',
-
-      'geometry/featurecollection.js',
-      'geometry/linestring.js',
-      'geometry/point.js',
-      'geometry/polygon.js',
-
-      'interpolation/isobands.js',
-      'interpolation/isolines.js',
-      'interpolation/planepoint.js',
-      'interpolation/tin.js',
-
-      'grids/hex-grid.js',
-      'grids/point-grid.js',
-      'grids/square-grid.js',
-      'grids/triangle-grid.js',
-
-      'joins/inside.js',
-      'joins/tag.js',
-      'joins/within.js',
-
-      'measurement/along.js',
-      'measurement/area.js',
-      'measurement/bbox-polygon.js',
-      'measurement/bearing.js',
-      'measurement/center.js',
-      'measurement/centroid.js',
-      'measurement/destination.js',
-      'measurement/distance.js',
-      'measurement/envelope.js',
-      'measurement/extent.js',
-      'measurement/line-distance.js',
-      'measurement/midpoint.js',
-      'measurement/nearest.js',
-      'measurement/point-on-surface.js',
-      'measurement/size.js',
-      'measurement/square.js',
-
-      'misc/combine.js',
-      'misc/isclockwise.js',
-      'misc/explode.js',
-      'misc/flip.js',
-      'misc/kinks.js',
-
-      'transformation/bezier.js',
-      'transformation/buffer.js',
-      'transformation/concave.js',
-      'transformation/convex.js',
-      'transformation/erase.js',
-      'transformation/intersect.js',
-      'transformation/merge.js',
-      'transformation/simplify.js',
-      'transformation/union.js'
+      'turf.min.js'
+    ],
+    'client');
+  api.addFiles([
+      'turfjs.js'
     ],
     'server');
 });
@@ -165,5 +99,6 @@ Package.onTest(function (api) {
     'transformation/merge-test.js',
     'transformation/simplify-test.js',
     'transformation/union-test.js'
-  ], 'server');
+  ]);
+  api.export(['turf']);
 });

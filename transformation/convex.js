@@ -1,3 +1,3 @@
 turf.convex = function (input) {
-  return turfJs.convex(input);
+  return turf.convex(input);
 };

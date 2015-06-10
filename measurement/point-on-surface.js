@@ -1,3 +1,3 @@
 turf.pointOnSurface = function (input) {
-  return turfJs.pointOnSurface(input);
+  return turf.pointOnSurface(input);
 };

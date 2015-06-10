@@ -1,3 +1,3 @@
 turf.centroid = function (features) {
-  return turfJs.centroid(features);
+  return turf.centroid(features);
 };
