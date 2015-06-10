@@ -82,7 +82,7 @@ Tinytest.add('aggregation - variance', function (test) {
       }
     }]
   };
-  var result = Turf.variance(polygons, points, 'population', 'variance');
+  var result = turf.variance(polygons, points, 'population', 'variance');
   var expected = {
     "type": "FeatureCollection",
     "features": [{

@@ -18,7 +18,7 @@ Tinytest.add('geometry - featurecollection', function (test) {
       "name": "Another point"
     }
   }];
-  var result = Turf.featurecollection(features);
+  var result = turf.featurecollection(features);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

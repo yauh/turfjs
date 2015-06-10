@@ -1,3 +1,3 @@
-Turf.nearest = function (point, against) {
+turf.nearest = function (point, against) {
   return turfJs.nearest(point, against);
 };

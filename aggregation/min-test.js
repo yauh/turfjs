@@ -82,7 +82,7 @@ Tinytest.add('aggregation - min', function (test) {
       }
     }]
   };
-  var result = Turf.min(polygons, points, 'population', 'min');
+  var result = turf.min(polygons, points, 'population', 'min');
   var expected = {
     "type": "FeatureCollection",
     "features": [{

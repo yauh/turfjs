@@ -1,119 +1,98 @@
-Turfjs for Meteor
-=================
+# turfjs for Meteor
+This package is a simple wrapper for<br>[turf](https://github.com/turfjs/turf). Manipulate GeoJSON objects,<br>similar to PostGIS.
 
-This package is a simple wrapper for
-[Turf](https://github.com/Turfjs/turf). Manipulate GeoJSON objects,
-similar to PostGIS.
+Read <a href="https://www.mapbox.com/guides/intro-to-turf/">an introduction to turf.js and spatial<br>analysis</a>.
 
-Read [an introduction to Turf.js and spatial
-analysis](https://www.mapbox.com/guides/intro-to-turf/).
+[![Build Status](https://travis-ci.org/yauh/turfjs.svg?branch=master)](https://travis-ci.org/yauh/turfjs)
 
-[![Build
-Status](https://travis-ci.org/yauh/turfjs.svg?branch=master)](https://travis-ci.org/yauh/turfjs)
-
-Usage
------
-
+## Usage
 Install the package via command line:
 
-    $ meteor add yauh:turfjs
+```
+$ meteor add yauh:turfjs
+```
 
-**Note** `Turf` is only available on the server, not on the client, even
-though it could be used there as well.
+**Note** `turf` is only available on the server, not on the client, even<br>though it could be used there as well.
 
-The package introduces a new global called `Turf` which knows these
-methods. See [the official docs](http://turfjs.org/static/docs/) for the
-correct syntax and parameters or check out the test files inside this
-package.
+The package introduces a new global called `turf` which knows these<br>methods. See [the official docs](http://turfjs.org/static/docs/) for the<br>correct syntax and parameters or check out the test files inside this<br>package.
 
 ### aggregation
-
--   `Turf.aggregate()`
--   `Turf.average()`
--   `Turf.count()`
--   `Turf.deviation()`
--   `Turf.max()`
--   `Turf.median()`
--   `Turf.min()`
--   `Turf.sum()`
--   `Turf.variance()`
+- `turf.aggregate()`
+- `turf.average()`
+- `turf.count()`
+- `turf.deviation()`
+- `turf.max()`
+- `turf.median()`
+- `turf.min()`
+- `turf.sum()`
+- `turf.variance()`
 
 ### classification
-
--   `Turf.jenks()`
--   `Turf.quantile()`
--   `Turf.reclass()`
+- `turf.jenks()`
+- `turf.quantile()`
+- `turf.reclass()`
 
 ### data
-
--   `Turf.filter()`
--   `Turf.remove()`
--   `Turf.sample()`
+- `turf.filter()`
+- `turf.remove()`
+- `turf.sample()`
 
 ### geometry
-
--   `Turf.featurecollection()`
--   `Turf.linestring()`
--   `Turf.point()`
--   `Turf.polygon()`
+- `turf.featurecollection()`
+- `turf.linestring()`
+- `turf.point()`
+- `turf.polygon()`
 
 ### interpolation
-
--   `Turf.isobands()`
--   `Turf.isolines()`
--   `Turf.planepoint()`
--   `Turf.tin()`
+- `turf.isobands()`
+- `turf.isolines()`
+- `turf.planepoint()`
+- `turf.tin()`
 
 ### grids
-
--   `Turf.hex-grid()`
--   `Turf.point-grid()`
--   `Turf.square-grid()`
--   `Turf.inside()`
--   `Turf.tag()`
--   `Turf.within()`
+- `turf.hex-grid()`
+- `turf.point-grid()`
+- `turf.square-grid()`
+- `turf.inside()`
+- `turf.tag()`
+- `turf.within()`
 
 ### measurement
-
--   `Turf.along()`
--   `Turf.area()`
--   `Turf.bbox-polygon()`
--   `Turf.bearing()`
--   `Turf.center()`
--   `Turf.centroid()`
--   `Turf.destination()`
--   `Turf.distance()`
--   `Turf.envelope()`
--   `Turf.extent()`
--   `Turf.line-distance()`
--   `Turf.midpoint()`
--   `Turf.nearest()`
--   `Turf.point-on-surface()`
--   `Turf.size()`
--   `Turf.square()`
+- `turf.along()`
+- `turf.area()`
+- `turf.bbox-polygon()`
+- `turf.bearing()`
+- `turf.center()`
+- `turf.centroid()`
+- `turf.destination()`
+- `turf.distance()`
+- `turf.envelope()`
+- `turf.extent()`
+- `turf.line-distance()`
+- `turf.midpoint()`
+- `turf.nearest()`
+- `turf.point-on-surface()`
+- `turf.size()`
+- `turf.square()`
 
 ### misc
-
--   `Turf.combine()`
--   `Turf.explode()`
--   `Turf.flip()`
--   `Turf.kinks()`
+- `turf.combine()`
+- `turf.explode()`
+- `turf.flip()`
+- `turf.kinks()`
 
 ### transformation
+- `turf.bezier()`
+- `turf.buffer()`
+- `turf.concave()`
+- `turf.convex()`
+- `turf.erase()`
+- `turf.intersect()`
+- `turf.merge()`
+- `turf.simplify()`
+- `turf.union()`
 
--   `Turf.bezier()`
--   `Turf.buffer()`
--   `Turf.concave()`
--   `Turf.convex()`
--   `Turf.erase()`
--   `Turf.intersect()`
--   `Turf.merge()`
--   `Turf.simplify()`
--   `Turf.union()`
-
-Todo
-====
-
--   Tests for all wrappers
--   Determine how to bring Turf to the client without sending the 500k
-    minified JS
+# Todo
+- Tests for all wrappers
+- Determine how to bring turf to the client without sending the 500k
+- minified JS - for now use the package `yauh:turfjs-client`

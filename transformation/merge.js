@@ -1,3 +1,3 @@
-Turf.merge = function (fc) {
+turf.merge = function (fc) {
   return turfJs.merge(fc);
 };

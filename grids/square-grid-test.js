@@ -2,7 +2,7 @@ Tinytest.add('grids - squareGrid', function (test) {
   var extent = [-77.3876953125, 38.71980474264239, -76.9482421875, 39.027718840211605];
   var cellWidth = 10;
   var units = 'miles';
-  var result = Turf.squareGrid(extent, cellWidth, units);
+  var result = turf.squareGrid(extent, cellWidth, units);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

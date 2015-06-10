@@ -17,7 +17,7 @@ Tinytest.add('misc - combine', function (test) {
       }
     }]
   };
-  var result = Turf.combine(fc);
+  var result = turf.combine(fc);
   var expected = {
     "type": "Feature",
     "properties": {},

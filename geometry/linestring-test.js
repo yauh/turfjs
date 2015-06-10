@@ -9,7 +9,7 @@ Tinytest.add('geometry - linestring', function (test) {
     name: 'a linestring',
     distance: 123
   };
-  var result = Turf.linestring(coordinates, properties);
+  var result = turf.linestring(coordinates, properties);
   var expected = {
     "type": "Feature",
     "geometry": {

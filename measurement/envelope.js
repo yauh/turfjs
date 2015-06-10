@@ -1,3 +1,3 @@
-Turf.envelope = function (fc) {
+turf.envelope = function (fc) {
   return turfJs.envelope(fc);
 };

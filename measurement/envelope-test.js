@@ -30,7 +30,7 @@ Tinytest.add('measurement - envelope', function (test) {
       }
     }]
   };
-  var result = Turf.envelope(fc);
+  var result = turf.envelope(fc);
   var expected = {
     "type": "Feature",
     "geometry": {

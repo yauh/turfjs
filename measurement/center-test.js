@@ -88,7 +88,7 @@ Tinytest.add('measurement - center', function (test) {
     }]
   };
 
-  var result = Turf.center(features);
+  var result = turf.center(features);
   var expected = {
     "type": "Feature",
     "geometry": {

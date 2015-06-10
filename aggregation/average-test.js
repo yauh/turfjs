@@ -83,7 +83,7 @@ Tinytest.add('aggregation - average', function (test) {
     }]
   };
 
-  var result = Turf.average(polygons, points, 'population', 'pop_avg');
+  var result = turf.average(polygons, points, 'population', 'pop_avg');
   var expected = {
     "type": "FeatureCollection",
     "features": [{

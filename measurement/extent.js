@@ -1,3 +1,3 @@
-Turf.extent = function (input) {
+turf.extent = function (input) {
   return turfJs.extent(input);
 };

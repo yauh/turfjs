@@ -83,7 +83,7 @@ Tinytest.add('aggregation - median', function (test) {
     }]
   };
 
-  var result = Turf.median(polygons, points, 'population', 'median');
+  var result = turf.median(polygons, points, 'population', 'median');
   var expected = {
     "type": "FeatureCollection",
     "features": [{

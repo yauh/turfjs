@@ -82,7 +82,7 @@ Tinytest.add('aggregation - sum', function (test) {
       }
     }]
   };
-  var result = Turf.sum(polygons, points, 'population', 'sum');
+  var result = turf.sum(polygons, points, 'population', 'sum');
   var expected = {
     "type": "FeatureCollection",
     "features": [{

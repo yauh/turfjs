@@ -1,3 +1,3 @@
-Turf.lineDistance = function (line, units) {
+turf.lineDistance = function (line, units) {
   return turfJs.lineDistance(line, units);
 };

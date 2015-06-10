@@ -34,7 +34,7 @@ Tinytest.add('measurement - area', function (test) {
     }]
   };
 
-  var result = Turf.area(polygons);
+  var result = turf.area(polygons);
   var expected = 255931320.77119994;
   test.equal(result, expected);
 });

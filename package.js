@@ -1,8 +1,8 @@
 Package.describe({
   name: 'yauh:turfjs',
-  version: '0.0.1',
+  version: '1.0.0',
   // Brief, one-line summary of the package.
-  summary: 'Turf.js library for geospatial operations (analyze, aggregate, and transform GeoJSON data)',
+  summary: 'turf.js library for geospatial operations (analyze, aggregate, and transform GeoJSON data)',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/yauh/turfjs',
   // By default, Meteor will default to using README.md for documentation.
@@ -16,7 +16,7 @@ Npm.depends({
 
 Package.onUse(function (api) {
   api.versionsFrom('1.0.4.1');
-  api.export('Turf');
+  api.export(['turf', 'Turf']); // keep legacy support for Turf
   api.addFiles([
       'turfjs.js',
       'aggregation/aggregate.js',
@@ -50,7 +50,7 @@ Package.onUse(function (api) {
       'grids/hex-grid.js',
       'grids/point-grid.js',
       'grids/square-grid.js',
-      //    'grids/triangle-grid.js',
+      'grids/triangle-grid.js',
 
       'joins/inside.js',
       'joins/tag.js',
@@ -74,6 +74,7 @@ Package.onUse(function (api) {
       'measurement/square.js',
 
       'misc/combine.js',
+      'misc/isclockwise.js',
       'misc/explode.js',
       'misc/flip.js',
       'misc/kinks.js',

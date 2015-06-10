@@ -66,7 +66,7 @@ Tinytest.add('data - remove', function (test) {
       }
     }]
   };
-  var result = Turf.remove(points, 'marker-color', '#00f');;
+  var result = turf.remove(points, 'marker-color', '#00f');;
   var expected = {
     "type": "FeatureCollection",
     "features": [{

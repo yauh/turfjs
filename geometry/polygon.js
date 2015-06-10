@@ -1,3 +1,3 @@
-Turf.polygon = function (rings, properties) {
+turf.polygon = function (rings, properties) {
   return turfJs.polygon(rings, properties);
 };

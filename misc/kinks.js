@@ -1,3 +1,3 @@
-Turf.kinks = function (polygon) {
+turf.kinks = function (polygon) {
   return turfJs.kinks(polygon);
 };

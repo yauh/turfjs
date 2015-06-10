@@ -12,7 +12,7 @@ Tinytest.add('measurement - destination', function (test) {
   var distance = 50;
   var bearing = 90;
   var units = 'miles';
-  var result = Turf.destination(point, distance, bearing, units);
+  var result = turf.destination(point, distance, bearing, units);
   var expected = {
     "type": "Feature",
     "geometry": {

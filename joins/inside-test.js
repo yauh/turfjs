@@ -42,14 +42,14 @@ var features = {
 
 Tinytest.add('joins - inside false', function (test) {
 
-  var result = Turf.inside(pt1, poly);
+  var result = turf.inside(pt1, poly);
   var expected = false;
   test.equal(result, expected);
 });
 
 Tinytest.add('joins - inside true', function (test) {
 
-  var result = Turf.inside(pt2, poly);
+  var result = turf.inside(pt2, poly);
   var expected = true;
   test.equal(result, expected);
 });

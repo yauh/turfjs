@@ -1,3 +1,3 @@
-Turf.planepoint = function (interpolatedPoint, triangle) {
+turf.planepoint = function (interpolatedPoint, triangle) {
   return turfJs.planepoint(interpolatedPoint, triangle);
 };

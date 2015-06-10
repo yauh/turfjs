@@ -60,7 +60,7 @@ Tinytest.add('data - filter', function (test) {
 
   var key = "species";
   var value = "oak";
-  var result = Turf.filter(features, key, value);
+  var result = turf.filter(features, key, value);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

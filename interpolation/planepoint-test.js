@@ -7,7 +7,7 @@ Tinytest.add('interpolation - planepoint', function (test) {
       "coordinates": [-75.3221, 39.529]
     }
   };
-  var point = Turf.point([-75.3221, 39.529]);
+  var point = turf.point([-75.3221, 39.529]);
   // triangle is a polygon with "a", "b",
   // and "c" values representing
   // the values of the coordinates in order.
@@ -35,7 +35,7 @@ Tinytest.add('interpolation - planepoint', function (test) {
     "type": "FeatureCollection",
     "features": [triangle, point]
   };
-  var result = Turf.planepoint(point, triangle);
+  var result = turf.planepoint(point, triangle);
   var expected = 37.43364475092331;
   test.equal(result, expected);
 });

@@ -1,3 +1,3 @@
-Turf.tirangleGrid = function (extent, cellWidth, units) {
-  return turfJs.tirangleGrid(extent, cellWidth, units);
+turf.triangleGrid = function (extent, cellWidth, units) {
+  return turfJs.triangleGrid(extent, cellWidth, units);
 };

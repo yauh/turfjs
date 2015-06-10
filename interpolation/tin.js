@@ -1,3 +1,3 @@
-Turf.tin = function (points, propertyName) {
+turf.tin = function (points, propertyName) {
   return turfJs.tin(points, propertyName);
 };

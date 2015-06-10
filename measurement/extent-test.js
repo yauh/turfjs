@@ -32,7 +32,7 @@ Tinytest.add('measurement - extent', function (test) {
     }]
   };
 
-  var result = Turf.extent(input);
+  var result = turf.extent(input);
   var expected = [114.170007, 22.2524, 114.200649, 22.274641];
   test.equal(result, expected);
 });

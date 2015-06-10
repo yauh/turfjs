@@ -34,7 +34,7 @@ Tinytest.add('measurement - nearest', function (test) {
       }
     }]
   };
-  var result = Turf.nearest(point, against);
+  var result = turf.nearest(point, against);
   var expected = {
     "type": "Feature",
     "properties": {},

@@ -15,7 +15,7 @@ Tinytest.add('measurement - line-distance', function (test) {
     }
   };
   var units = 'miles';
-  var result = Turf.lineDistance(line, units);
+  var result = turf.lineDistance(line, units);
   var expected = 1.6389817168470033;
   test.equal(result, expected);
 });

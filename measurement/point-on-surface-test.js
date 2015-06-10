@@ -17,7 +17,7 @@ Tinytest.add('measurement - point-on-surface', function (test) {
       "name": "A polygon"
     }
   };
-  var result = Turf.pointOnSurface(polygon);
+  var result = turf.pointOnSurface(polygon);
   var expected = {
     "type": "Feature",
     "geometry": {

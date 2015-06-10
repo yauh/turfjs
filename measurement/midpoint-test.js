@@ -16,7 +16,7 @@ Tinytest.add('measurement - midpoint', function (test) {
     }
   };
 
-  var result = Turf.midpoint(pt1, pt2);
+  var result = turf.midpoint(pt1, pt2);
   var expected = {
     "type": "Feature",
     "geometry": {

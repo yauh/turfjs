@@ -17,7 +17,7 @@ Tinytest.add('transformation - bezier', function (test) {
     }
   };
 
-  var result = Turf.bezier(line);
+  var result = turf.bezier(line);
   var expected = {
     "type": "Feature",
     "geometry": {

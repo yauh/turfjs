@@ -56,7 +56,7 @@ Tinytest.add('aggregation - count', function (test) {
     }]
   };
 
-  var result = Turf.count(polygons, points, 'pt_count');
+  var result = turf.count(polygons, points, 'pt_count');
   var expected = {
     "type": "FeatureCollection",
     "features": [{

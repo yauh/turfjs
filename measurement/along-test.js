@@ -14,7 +14,7 @@ Tinytest.add('measurement - along', function (test) {
       ]
     }
   };
-  var result = Turf.along(line, 1, 'miles');
+  var result = turf.along(line, 1, 'miles');
   var expected = {
     "type": "Feature",
     "geometry": {

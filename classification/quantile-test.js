@@ -49,7 +49,7 @@ Tinytest.add('classification - quantile', function (test) {
     }]
   };
 
-  var result = Turf.quantile(
+  var result = turf.quantile(
     points, 'population', [25, 50, 75, 99]);
   var expected = [40, 80, 90, 100];
   test.equal(result, expected);

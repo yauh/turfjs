@@ -1,3 +1,3 @@
-Turf.square = function (bbox) {
+turf.square = function (bbox) {
   return turfJs.square(bbox);
 };

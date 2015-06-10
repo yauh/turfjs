@@ -21,7 +21,7 @@ Tinytest.add('measurement - distance', function (test) {
     "type": "FeatureCollection",
     "features": [point1, point2]
   };
-  var result = Turf.distance(point1, point2, units);
+  var result = turf.distance(point1, point2, units);
   var expected = 60.37218405837491;
   test.equal(result, expected);
 });

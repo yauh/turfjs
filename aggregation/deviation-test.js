@@ -85,7 +85,7 @@ Tinytest.add('aggregation - deviation', function (test) {
 
   var inField = "population";
   var outField = "pop_deviation";
-  var result = Turf.deviation(polygons, points, inField, outField);
+  var result = turf.deviation(polygons, points, inField, outField);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

@@ -11,7 +11,7 @@ Tinytest.add('geometry - polygon', function (test) {
   var properties = {
     'name': 'A polygon'
   };
-  var result = Turf.polygon(rings, properties);
+  var result = turf.polygon(rings, properties);
   var expected = {
     "type": "Feature",
     "geometry": {

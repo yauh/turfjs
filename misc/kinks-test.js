@@ -16,7 +16,7 @@ Tinytest.add('misc - kinks', function (test) {
     }
   };
 
-  var result = Turf.kinks(poly);
+  var result = turf.kinks(poly);
   var expected = {
     "intersections": {
       "type": "FeatureCollection",

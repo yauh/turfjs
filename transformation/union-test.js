@@ -35,7 +35,7 @@ Tinytest.add('transformation - union', function (test) {
       ]
     }
   };
-  var result = Turf.union(poly1, poly2);
+  var result = turf.union(poly1, poly2);
   var expected = {
     "type": "Feature",
     "geometry": {

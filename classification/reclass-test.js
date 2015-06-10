@@ -55,7 +55,7 @@ Tinytest.add('classification - reclass', function (test) {
     [400, 600, "large"]
   ];
 
-  var result = Turf.reclass(
+  var result = turf.reclass(
     points, 'population', 'size', translations);
   var expected = {
     "type": "FeatureCollection",

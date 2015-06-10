@@ -18,7 +18,7 @@ Tinytest.add('misc - explode', function (test) {
     }
   };
 
-  var result = Turf.explode(poly);
+  var result = turf.explode(poly);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

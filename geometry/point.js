@@ -1,3 +1,3 @@
-Turf.point = function (coordinates, properties) {
+turf.point = function (coordinates, properties) {
   return turfJs.point(coordinates, properties);
 };

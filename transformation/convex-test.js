@@ -46,7 +46,7 @@ Tinytest.add('transformation - convex', function (test) {
     }]
   };
 
-  var result = Turf.convex(points);
+  var result = turf.convex(points);
   var expected = {
     "type": "Feature",
     "geometry": {

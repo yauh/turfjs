@@ -3,7 +3,7 @@ Tinytest.add('geometry - point', function (test) {
   var properties = {
     'name': 'A point'
   };
-  var result = Turf.point(point, properties);
+  var result = turf.point(point, properties);
   var expected = {
     "type": "Feature",
     "geometry": {

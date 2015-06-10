@@ -35,7 +35,7 @@ Tinytest.add('transformation - erase', function (test) {
       ]
     }
   };
-  var result = Turf.erase(poly1, poly2);
+  var result = turf.erase(poly1, poly2);
   var expected = {
     "type": "Feature",
     "properties": {

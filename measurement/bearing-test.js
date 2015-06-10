@@ -19,7 +19,7 @@ Tinytest.add('measurement - bearing', function (test) {
       "coordinates": [-75.534, 39.123]
     }
   };
-  var result = Turf.bearing(point1, point2);
+  var result = turf.bearing(point1, point2);
   var expected = -170.2330491349224;
   test.equal(result, expected);
 });

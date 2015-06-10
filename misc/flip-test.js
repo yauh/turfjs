@@ -7,7 +7,7 @@ Tinytest.add('misc - flip', function (test) {
       "coordinates": [20.566406, 43.421008]
     }
   };
-  var result = Turf.flip(input);
+  var result = turf.flip(input);
   var expected = {
     "type": "Feature",
     "properties": {},

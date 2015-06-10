@@ -39,7 +39,7 @@ Tinytest.add('transformation - intersect', function (test) {
     }
   }
 
-  var result = Turf.intersect(poly1, poly2);
+  var result = turf.intersect(poly1, poly2);
   var expected = {
     "type": "Feature",
     "properties": {},

@@ -2,7 +2,7 @@ Tinytest.add('grids - hexGrid', function (test) {
   var bbox = [-96, 31, -84, 40];
   var cellWidth = 50;
   var units = 'miles';
-  var result = Turf.hexGrid(bbox, cellWidth, units);
+  var result = turf.hexGrid(bbox, cellWidth, units);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

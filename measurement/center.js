@@ -1,3 +1,3 @@
-Turf.center = function (features) {
+turf.center = function (features) {
   return turfJs.center(features);
 };

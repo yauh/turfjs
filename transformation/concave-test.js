@@ -46,7 +46,7 @@ Tinytest.add('transformation - concave', function (test) {
     }]
   };
 
-  var result = Turf.concave(points, 1, 'miles');
+  var result = turf.concave(points, 1, 'miles');
   var expected = {
     "type": "Feature",
     "geometry": {

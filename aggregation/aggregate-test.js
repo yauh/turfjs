@@ -115,7 +115,7 @@ Tinytest.add('aggregation - aggregate', function (test) {
     inField: '',
     outField: 'point_count'
   }];
-  var result = Turf.aggregate(
+  var result = turf.aggregate(
     polygons, points, aggregations);
   var expected = {
     "type": "FeatureCollection",

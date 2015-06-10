@@ -36,7 +36,7 @@ Tinytest.add('transformation - merge', function (test) {
     }]
   };
 
-  var result = Turf.merge(polygons);
+  var result = turf.merge(polygons);
   var expected = {
     "type": "Feature",
     "geometry": {

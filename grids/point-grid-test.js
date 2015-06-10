@@ -2,7 +2,7 @@ Tinytest.add('grids - pointGrid', function (test) {
   var extent = [-70.823364, -33.553984, -70.473175, -33.302986];
   var cellWidth = 3;
   var units = 'miles';
-  var result = Turf.pointGrid(extent, cellWidth, units);
+  var result = turf.pointGrid(extent, cellWidth, units);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

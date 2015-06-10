@@ -9,7 +9,7 @@ Tinytest.add('transformation - buffer', function (test) {
   };
   var unit = 'miles';
 
-  var result = Turf.buffer(pt, 500, unit);
+  var result = turf.buffer(pt, 500, unit);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

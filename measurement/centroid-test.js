@@ -15,7 +15,7 @@ Tinytest.add('measurement - centroid', function (test) {
       ]
     }
   };
-  var result = Turf.centroid(poly);
+  var result = turf.centroid(poly);
   var expected = {
     "type": "Feature",
     "geometry": {

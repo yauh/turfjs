@@ -83,7 +83,7 @@ Tinytest.add('aggregation - max', function (test) {
     }]
   };
 
-  var result = Turf.max(polygons, points, 'population', 'max');
+  var result = turf.max(polygons, points, 'population', 'max');
   var expected = {
     "type": "FeatureCollection",
     "features": [{

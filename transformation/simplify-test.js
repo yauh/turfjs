@@ -32,7 +32,7 @@ Tinytest.add('transformation - simplify', function (test) {
   };
 
   var tolerance = 0.01;
-  var result = Turf.simplify(feature, tolerance, false);
+  var result = turf.simplify(feature, tolerance, false);
   var expected = {
     "type": "Feature",
     "geometry": {

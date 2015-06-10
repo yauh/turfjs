@@ -60,7 +60,7 @@ Tinytest.add('joins - within', function (test) {
     }]
   };
 
-  var result = Turf.within(points, searchWithin);
+  var result = turf.within(points, searchWithin);
   var expected = {
     "type": "FeatureCollection",
     "features": [{

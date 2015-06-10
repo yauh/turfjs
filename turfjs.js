@@ -1,12 +1,14 @@
 turfJs = Npm.require('turf');
 
-Turf = {};
+turf = {}; // this is to align with the client libs
 
-Turf.hello =
+Turf = turf; // this is for legacy support
+
+turf.hello =
   function () {
     return "hello";
   };
 
-Turf.random = function (args) {
+turf.random = function (args) {
   return turfJs.random(args)
 }
