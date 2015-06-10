@@ -1,6 +1,6 @@
 Package.describe({
   name: 'yauh:turfjs',
-  version: '1.0.1',
+  version: '1.0.1-2',
   // Brief, one-line summary of the package.
   summary: 'turf.js library for geospatial operations (analyze, aggregate, and transform GeoJSON data)',
   // URL to the Git repository containing the source code for this package.
@@ -14,9 +14,6 @@ Package.onUse(function (api) {
   api.imply('yauh:turfjs-client@1.0.0', 'client');
   api.imply('yauh:turfjs-server@1.0.0', 'server');
   api.versionsFrom('1.0.4.1');
-  api.addFiles([
-      'turfjs.js'
-    ]);
 });
 
 Package.onTest(function (api) {
