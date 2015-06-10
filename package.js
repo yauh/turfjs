@@ -11,8 +11,8 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-  api.imply('yauh:turfjs-client', 'client');
-  api.imply('yauh:turfjs-server', 'server');
+  api.imply('yauh:turfjs-client@1.0.0', 'client');
+  api.imply('yauh:turfjs-server@1.0.0', 'server');
   api.versionsFrom('1.0.4.1');
   api.addFiles([
       'turfjs.js'
