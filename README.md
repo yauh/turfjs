@@ -1,9 +1,11 @@
 # turfjs for Meteor
-This package is a simple wrapper for<br>[turf](https://github.com/turfjs/turf). Manipulate GeoJSON objects,<br>similar to PostGIS.
+This package is a simple wrapper for<br>[turf](https://github.com/turfjs/turf) on server and client. Manipulate GeoJSON objects,<br>similar to PostGIS.
 
 [![Build Status](https://travis-ci.org/yauh/turfjs.svg?branch=master)](https://travis-ci.org/yauh/turfjs)
 
 Read <a href="https://www.mapbox.com/guides/intro-to-turf/">an introduction to turf.js and spatial<br>analysis</a>.
+
+**Note** `turf` is available on the server and the client. If you need it only on the client install `yauh:turfjs-client`, for the server only package use `yauh:turfjs-server`.
 
 ## Usage
 Install the package via command line:
