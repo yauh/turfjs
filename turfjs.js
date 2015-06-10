@@ -1,14 +1,6 @@
 if (Meteor.isServer){
-turf = Npm.require('turf');
+  console.log('on the server');
 }
-
-Turf = turf; // this is for legacy support
-
-turf.hello =
-  function () {
-    return "hello";
-  };
-
-turf.random = function (args) {
-  return turf.random(args)
+else {
+  console.log('on the client');
 }
